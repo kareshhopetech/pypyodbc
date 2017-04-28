@@ -1942,8 +1942,7 @@ class Cursor:
             if ret == SQL_NO_DATA_FOUND:
                 
                 return None
-            else:
-                check_success(self, ret)
+            return None
                 
     def __next__(self):
         return self.next()
